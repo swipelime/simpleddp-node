@@ -1,0 +1,36 @@
+{
+	"name": "simpleddp-node",
+	"version": "0.1.0",
+	"description": "The aim of this library is to simplify the process of working with meteor server over DDP protocol using external JS environments",
+	"keywords": [
+		"ddp",
+		"simpleddp",
+		"simple",
+		"ddpjs",
+		"ddp.js",
+		"DDP",
+		"WebSocket",
+		"client",
+		"meteor"
+	],
+	"scripts": {
+		"build": "tsc -p tsconfig.json"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/swipelime/simpleddp-node/",
+	"dependencies": {
+		"clone-deep": "^4.0.1",
+		"ejson": "^2.2.0"
+	},
+	"main": "dist/DDPClient.js",
+	"types": "dist/DDPClient.d.ts",
+	"devDependencies": {
+		"@types/clone-deep": "^4.0.4",
+		"@types/ejson": "^2.2.2",
+		"@types/node": "^20.12.7",
+		"@types/uuid": "^8.3.4",
+		"@types/ws": "^8.5.10",
+		"typescript": "^4.8.4",
+		"ws": "^6.2.2"
+	}
+}

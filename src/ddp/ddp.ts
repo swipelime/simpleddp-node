@@ -53,6 +53,8 @@ export default class DDP extends EventEmitter
 		this.autoReconnect = options.autoReconnect !== false;
 		this.autoReconnectUserValue = this.autoReconnect;
 		this.reconnectInterval = options.reconnectInterval || DEFAULT_RECONNECT_INTERVAL;
+		
+		this.setMaxListeners(100);
 
 		this.messageQueue = new Queue((message) =>
 		{

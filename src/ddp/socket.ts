@@ -14,6 +14,7 @@ export default class Socket extends EventEmitter
 		this.SocketConstructor = SocketConstructor;
 		this.endpoint = endpoint;
 		this.rawSocket = null;
+		this.setMaxListeners(100);
 	}
 
 	send(object: any)

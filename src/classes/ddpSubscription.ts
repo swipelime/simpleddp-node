@@ -80,7 +80,7 @@ export class ddpSubscription
 		{
 			if (m.id == this.subscriptionId)
 			{
-				if(m.error) throw new Error(m.error.message);
+				// if(m.error) throw new Error(m.error.message);
 
 				f(m);
 			}
